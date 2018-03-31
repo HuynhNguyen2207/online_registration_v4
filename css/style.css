@@ -189,31 +189,20 @@ select:focus {
         max-width: 900px;
     }
 
-    .contact_info .container {
-        display: flex;
-        flex-wrap: wrap;
+    .contact_info .container > label {
+        width: 25%;
+        display: inline-block;
     }
 
-    legend {
-        flex-basis: 100%;
+    .contact_info .container > input,
+    .contact_info .container > select {
+        width: 75%;
+        display: inline-block;
+        margin-left: -4px;
     }
 
-    .contact_info label {
-        flex: 0 0 20%;
-        margin-top: 23px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    select {
-        flex-basis: 75%;
-        margin-left: auto;
-    }
-
-    input[name="user_zip"] {
-        flex-basis: 30%;
-        margin-left: 34px;
+    .contact_info .container > input[name="user_zip"] {
+        width: 30%;
     }
 
 }
